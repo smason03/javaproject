@@ -1,35 +1,51 @@
 public class Main {
 	public static void main(String[] args){
+		int x = 3, y = 3;
 		
-		int maxVisitors = 5;
-		int numDinos = 10;
-		int safetyRating = 3;
-		
-		String breed = "velociraptor";
-		double height = 60.5;
-		double length = 221.6;
-		double weight = 400.0;
-		
-		String out = "Dinosaur Details: " +
-			"Breed: " + breed + 
-			" Height: " + height + 
-			" Length: " + length +
-			" Weight: " + weight;
-
-		System.out.println(out);
-	
-		String msg = "There are " + numDinos + 
-			" dinosaurs in Mesozoic Eden.";
-	
-		System.out.println(msg);
-
-		msg = "Our safety rating is " + safetyRating + 
-			".";
-	
-		System.out.println(msg);
-	
+		if (x > y) {
+			System.out.println(x + ">" + y);
+		} else if (x < y) {
+			System.out.println(x + "<" + y);
+		} else if (x == y) {
+			System.out.println(x + " == " + y);
+		}
+		System.out.println("Here");
 	}
 }
+
+
+// public class Main {
+// 	public static void main(String[] args){
+// 		
+// 		int maxVisitors = 5;
+// 		int numDinos = 10;
+// 		int safetyRating = 3;
+// 		
+// 		String breed = "velociraptor";
+// 		double height = 60.5;
+// 		double length = 221.6;
+// 		double weight = 400.0;
+// 		
+// 		String out = "Dinosaur Details: " +
+// 			"Breed: " + breed + 
+// 			" Height: " + height + 
+// 			" Length: " + length +
+// 			" Weight: " + weight;
+// 
+// 		System.out.println(out);
+// 	
+// 		String msg = "There are " + numDinos + 
+// 			" dinosaurs in Mesozoic Eden.";
+// 	
+// 		System.out.println(msg);
+// 
+// 		msg = "Our safety rating is " + safetyRating + 
+// 			".";
+// 	
+// 		System.out.println(msg);
+// 	
+// 	}
+// }
 
 
 
