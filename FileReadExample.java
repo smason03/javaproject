@@ -1,19 +1,30 @@
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 public class FileReadExample {
 	
 	public static void main(String[] args){
+		FileReader reader = null;
+		
 		try {
-			FileReader reader = new FileReader("input.txt");
+			reader = new FileReader("input.txt");
 			int character;
 			while ((character = reader.read()) != -1){
 				System.out.print((char) character);
 			}
-			reader.close();
+		} catch (FileNotFoundException e){
+			System.out.println("Not found:" + 
+				e.getMessage());
 		} catch (IOException e){
 			System.out.println("Couldn't find file.");
-			//e.printStackTrace();
+			e.printStackTrace();
+		} finally {
+			if (reader != null){
+				try {
+					reader.close();
+				} catch (IOException e) {
+					System.out.println("Err closing: " + 
+						e.getMessage());
+				}
+			}
 		}
-	}
 }
